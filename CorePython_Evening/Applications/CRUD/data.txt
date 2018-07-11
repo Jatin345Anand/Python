@@ -1,0 +1,2 @@
+'name': 'Ram', 'age': 26, 'salary': 30000
+'name': 'Shyam', 'age': 24, 'salary': 35000
