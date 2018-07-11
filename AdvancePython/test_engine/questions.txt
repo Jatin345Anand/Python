@@ -1,0 +1,6 @@
+1. In which year python was introduced ?
+2. What is latest stable version of python ?
+3. Which module is built for date and time ?
+4. What is parent class of all exceptions ?
+5. Inside which block exception is handled ?
+6. Through which keyword you can skip current loop ?
