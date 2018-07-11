@@ -1,0 +1,26 @@
+CGI - Common Gateway Interface
+
+Server - Apache
+http/https
+
+localhost:8080
+
+127.0.0.1:8000
+
+python -m http.server --cgi
+
+Registration
+Name
+Age
+Email
+Password
+Confirm Password
+Submit
+
+
+
+
+
+
+
+

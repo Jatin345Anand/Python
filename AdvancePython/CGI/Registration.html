@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>Registration Form</h1>
+
+<form action="cgi-bin/register.py" method="post">
+    <table>
+        <tr>
+            <td>Enter Name</td>
+            <td><input type="text" placeholder="Enter Name" name="username"></td>
+        </tr>
+        <tr>
+            <td>Enter Email</td>
+            <td>
+                <input type="email" placeholder="Enter Email" name="useremail">
+            </td>
+        </tr>
+        <tr>
+            <td>Enter Password</td>
+            <td>
+                <input type="password" placeholder="Enter Password" name="userpwd">
+            </td>
+        </tr>
+        <tr>
+            <td>Enter Company Name</td>
+            <td>
+                <input type="text" placeholder="Enter Company" name="company">
+            </td>
+        </tr>
+        <tr>
+            <td>Enter Salary</td>
+            <td>
+                <input type="text" placeholder="Enter Salary" name="salary">
+            </td>
+        </tr>
+        <tr>
+            <td>Enter Department</td>
+            <td>
+                <select name="dept">
+                    <option>Select Department</option>
+                    <option value="hr">HR</option>
+                    <option value="it">IT</option>
+                    <option value="manage">Management</option>
+                    <option value="network">Network</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <br>
+                <input type="reset">
+                <input type="submit" value="Register">
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
