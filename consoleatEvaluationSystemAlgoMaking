@@ -1,0 +1,269 @@
+Last login: Tue Mar  5 12:13:00 on ttys014
+-bash: PATH: command not found
+Jatins-MacBook-Air:~ jatinanand$ python
+Python 3.6.5 |Anaconda, Inc.| (default, Apr 26 2018, 08:42:37) 
+[GCC 4.2.1 Compatible Clang 4.0.1 (tags/RELEASE_401/final)] on darwin
+Type "help", "copyright", "credits" or "license" for more information.
+>>> l=[1,1,2,3,4,]
+>>> l
+[1, 1, 2, 3, 4]
+>>> len(l)
+5
+>>> l.
+l.append(   l.clear(    l.copy(     l.count(    l.extend(   l.index(    l.insert(   l.pop(      l.remove(   l.reverse(  l.sort(
+>>> l.
+l.append(   l.clear(    l.copy(     l.count(    l.extend(   l.index(    l.insert(   l.pop(      l.remove(   l.reverse(  l.sort(
+>>> l.clear()
+>>> l
+[]
+>>> l.count
+<built-in method count of list object at 0x106692108>
+>>> l.count()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: count() takes exactly one argument (0 given)
+>>> import numpy as np
+>>> np.array([1,2,3,4,5,6,6])
+array([1, 2, 3, 4, 5, 6, 6])
+>>> np.array([1,2,3,4,5,6,6]).clear()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'numpy.ndarray' object has no attribute 'clear'
+>>> NL=np.array([1,2,3,4,5,6,6])
+>>> NL
+array([1, 2, 3, 4, 5, 6, 6])
+>>> NL.
+NL.T              NL.clip(          NL.dtype          NL.itemsize       NL.put(           NL.size           NL.tostring(
+NL.all(           NL.compress(      NL.dump(          NL.max(           NL.ravel(         NL.sort(          NL.trace(
+NL.any(           NL.conj(          NL.dumps(         NL.mean(          NL.real           NL.squeeze(       NL.transpose(
+NL.argmax(        NL.conjugate(     NL.fill(          NL.min(           NL.repeat(        NL.std(           NL.var(
+NL.argmin(        NL.copy(          NL.flags          NL.nbytes         NL.reshape(       NL.strides        NL.view(
+NL.argpartition(  NL.ctypes         NL.flat           NL.ndim           NL.resize(        NL.sum(           
+NL.argsort(       NL.cumprod(       NL.flatten(       NL.newbyteorder(  NL.round(         NL.swapaxes(      
+NL.astype(        NL.cumsum(        NL.getfield(      NL.nonzero(       NL.searchsorted(  NL.take(          
+NL.base           NL.data           NL.imag           NL.partition(     NL.setfield(      NL.tobytes(       
+NL.byteswap(      NL.diagonal(      NL.item(          NL.prod(          NL.setflags(      NL.tofile(        
+NL.choose(        NL.dot(           NL.itemset(       NL.ptp(           NL.shape          NL.tolist(        
+>>> NL.
+NL.T              NL.clip(          NL.dtype          NL.itemsize       NL.put(           NL.size           NL.tostring(
+NL.all(           NL.compress(      NL.dump(          NL.max(           NL.ravel(         NL.sort(          NL.trace(
+NL.any(           NL.conj(          NL.dumps(         NL.mean(          NL.real           NL.squeeze(       NL.transpose(
+NL.argmax(        NL.conjugate(     NL.fill(          NL.min(           NL.repeat(        NL.std(           NL.var(
+NL.argmin(        NL.copy(          NL.flags          NL.nbytes         NL.reshape(       NL.strides        NL.view(
+NL.argpartition(  NL.ctypes         NL.flat           NL.ndim           NL.resize(        NL.sum(           
+NL.argsort(       NL.cumprod(       NL.flatten(       NL.newbyteorder(  NL.round(         NL.swapaxes(      
+NL.astype(        NL.cumsum(        NL.getfield(      NL.nonzero(       NL.searchsorted(  NL.take(          
+NL.base           NL.data           NL.imag           NL.partition(     NL.setfield(      NL.tobytes(       
+NL.byteswap(      NL.diagonal(      NL.item(          NL.prod(          NL.setflags(      NL.tofile(        
+NL.choose(        NL.dot(           NL.itemset(       NL.ptp(           NL.shape          NL.tolist(        
+>>> NL.compress()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: Required argument 'condition' (pos 1) not found
+>>> NL = NL.t
+NL.take(       NL.tobytes(    NL.tofile(     NL.tolist(     NL.tostring(   NL.trace(      NL.transpose(  
+>>> NL = NL.tobytes()
+>>> NL
+b'\x01\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x00\x00\x00\x00\x05\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x00\x00\x00\x00'
+>>> NL = NL.tostring()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'bytes' object has no attribute 'tostring'
+>>> NL=np.array([1,2,3,4,5,6,6])
+>>> NL= NL.tostring()
+>>> NL
+b'\x01\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x00\x00\x00\x00\x05\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x00\x00\x00\x00'
+>>> NL= NL.tostring()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'bytes' object has no attribute 'tostring'
+>>> NL1= NL.tostring()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+AttributeError: 'bytes' object has no attribute 'tostring'
+>>> NL1=np.array([1,2,3,4,5,6,6])
+>>> NL!
+  File "<stdin>", line 1
+    NL!
+      ^
+SyntaxError: invalid syntax
+>>> NL1
+array([1, 2, 3, 4, 5, 6, 6])
+>>> NL2=NL1.tostring()
+>>> NL2
+b'\x01\x00\x00\x00\x00\x00\x00\x00\x02\x00\x00\x00\x00\x00\x00\x00\x03\x00\x00\x00\x00\x00\x00\x00\x04\x00\x00\x00\x00\x00\x00\x00\x05\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x00\x00\x00\x00\x06\x00\x00\x00\x00\x00\x00\x00'
+>>> type(NL2)
+<class 'bytes'>
+>>> NL.t
+NL.title(      NL.translate(  
+>>> NL.translate()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: Function takes at least 1 positional arguments (0 given)
+>>> NL.translate(2)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: a bytes-like object is required, not 'int'
+>>> A= np.array([2,3,45])
+>>> A.tra
+A.trace(      A.transpose(  
+>>> A.transpose()
+array([ 2,  3, 45])
+>>> A.transpose(2)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+numpy.core._internal.AxisError: axis 2 is out of bounds for array of dimension 1
+>>> A.transpose()
+array([ 2,  3, 45])
+>>> A
+array([ 2,  3, 45])
+>>> nl= np.array([2,'23',3.456])
+>>> nl
+array(['2', '23', '3.456'], dtype='<U21')
+>>> NLL= nl.tolist()
+>>> LL
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'LL' is not defined
+>>> NLL
+['2', '23', '3.456']
+>>> type(NLL)
+<class 'list'>
+>>> type(NLL[0])
+<class 'str'>
+>>> l=[1,2,3,4,4,5,5,6,6,6,9]
+>>> for i in l:
+... print(i)
+  File "<stdin>", line 2
+    print(i)
+        ^
+IndentationError: expected an indented block
+>>> for i in l:
+... 
+  File "<stdin>", line 2
+    
+    ^
+IndentationError: expected an indented block
+>>> l
+[1, 2, 3, 4, 4, 5, 5, 6, 6, 6, 9]
+>>> for i in l:
+...    print(i)
+... 
+1
+2
+3
+4
+4
+5
+5
+6
+6
+6
+9
+>>> for i in l:
+...    if i not in l:
+...       print(i)
+... 
+>>> 
+>>> l.sort()
+>>> l
+[1, 2, 3, 4, 4, 5, 5, 6, 6, 6, 9]
+>>> l.
+l.append(   l.clear(    l.copy(     l.count(    l.extend(   l.index(    l.insert(   l.pop(      l.remove(   l.reverse(  l.sort(
+>>> l.count()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: count() takes exactly one argument (0 given)
+>>> l.count(2)
+1
+>>> l.count(4)
+2
+>>> l.count(3)
+1
+>>> l.count(6)
+3
+>>> l.pop()
+9
+>>> l.remove()
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: remove() takes exactly one argument (0 given)
+>>> l.remove(4)
+>>> l
+[1, 2, 3, 4, 5, 5, 6, 6, 6]
+>>> l.reverse(  )
+>>> l
+[6, 6, 6, 5, 5, 4, 3, 2, 1]
+>>> var l=['y','j','a','t','i','n']
+  File "<stdin>", line 1
+    var l=['y','j','a','t','i','n']
+        ^
+SyntaxError: invalid syntax
+>>> l=['y','j','a','t','i','n']
+>>> for i in l:
+...    if(i.find('y')>-1):
+...       print(i)
+... 
+y
+>>> for i in l:
+... l=['y','j','a','t','i','n']
+  File "<stdin>", line 2
+    l=['y','j','a','t','i','n']
+    ^
+IndentationError: expected an indented block
+>>> 
+>>> for i in range(len(l)):
+...    if(l[i].find('y')>-1):
+...       print(l[i:-1])
+... 
+['y', 'j', 'a', 't', 'i']
+>>> for i in range(len(l)):
+...    if(l[i].find('y')>-1):
+...       print(l[i+1:-1])
+... 
+['j', 'a', 't', 'i']
+>>> l
+['y', 'j', 'a', 't', 'i', 'n']
+>>> for i in range(len(l)):
+...    if(l[i].find('y')>-1):
+...       print(l[i+1:])
+... 
+['j', 'a', 't', 'i', 'n']
+>>> sans=''
+>>> for i in range(len(l)):
+...    if(l[i].find('y')>-1):
+...       print(l[i+1:])
+...       sans= sans + l[i+1:]
+... 
+['j', 'a', 't', 'i', 'n']
+Traceback (most recent call last):
+  File "<stdin>", line 4, in <module>
+TypeError: must be str, not list
+>>> sans
+''
+>>> for i in range(len(l)):
+...    if(l[i].find('y')>-1):
+...       print(l[i+1:])
+...       for j in l[i+1:]:
+...          sans = sans + j
+... 
+['j', 'a', 't', 'i', 'n']
+>>> sans
+'jatin'
+>>> sans[:]
+'jatin'
+>>> sans[:-1]
+'jati'
+>>> var l1=['a','b','c']
+  File "<stdin>", line 1
+    var l1=['a','b','c']
+         ^
+SyntaxError: invalid syntax
+>>> l1=['a','b','c']
+>>> l1[1:]
+['b', 'c']
+>>> l='15'
+>>> ans = '20'+l[0:3]
+>>> ans
+'2015'
+>>> 
