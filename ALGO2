@@ -1,0 +1,45 @@
+import tabula,os
+Path1stSemPDf = '/Users/jatinanand/InterViewAssignments/TableTenisEvaluationApp/MainTTplayer.pdf'
+df = tabula.read_pdf(Path1stSemPDf,pages='all')
+PdfInputName =Path1stSemPDf.rfind('/')
+ExcelName = Path1stSemPDf[Path1stSemPDf.rfind('/')+1:-4]+'.xlsx'
+df.to_excel(ExcelName)
+InputPathXLSX = os.getcwd() + '/'+ExcelName+''
+import pandas as pd
+
+DF=pd.read_excel(InputPathXLSX)
+import xlrd
+workBook = xlrd.open_workbook(InputPathXLSX)
+sheet= workBook.sheet_by_index(0)
+ROWS = sheet.nrows
+COLUMNS =sheet.ncols
+for r in range(1,COLUMNS):
+    print(sheet.cell_value(0,r))
+CreatePlayerBsonLL=[]
+for r in range(1,ROWS):
+    CreatePlayerBsonLL.append(sheet.row_values(r))
+NewLLforBson=[]
+for i in CreatePlayerBsonLL:
+    if(i[1].find('Prev')>-1):
+        print(i)
+    else:
+        NewLLforBson.append(i)
+#     print(i,type(i),i[1],type(i[1]),)
+import pymongo
+from pymongo import MongoClient
+Client = pymongo.MongoClient('localhost',27017)
+# Client = pymongo.MongoClient('mongodb://jatinanand345:jatin#123@ds357955.mlab.com:57955/evaluationsystemdb')
+db =  Client.ttdb
+players = db.players
+def CreatePlayerBson(L):
+    pdic={}
+    pdic['prev']=str(L[1][L[1].find('(')+1:L[1].find(')')])
+    pdic['pos']=str(L[2])
+    pdic['name']=L[3]
+    pdic['country']=L[4]
+    pdic['points']=str(L[5])
+    pdic['inactiveperiods']=str(L[-1])
+    print(pdic)
+#     players.insert_one(pdic)
+    return 'done'
+CreatePlayerBson(NewLLforBson[-1])
