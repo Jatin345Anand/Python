@@ -1,5 +1,5 @@
 import tabula,os
-Path1stSemPDf = '/Users/jatinanand/InterViewAssignments/TableTenisEvaluationApp/MainTTplayer.pdf'
+Path1stSemPDf = 'MainTTplayer.pdf'
 df = tabula.read_pdf(Path1stSemPDf,pages='all')
 PdfInputName =Path1stSemPDf.rfind('/')
 ExcelName = Path1stSemPDf[Path1stSemPDf.rfind('/')+1:-4]+'.xlsx'
